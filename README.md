@@ -6,7 +6,7 @@ A simple watch face with rings to show progress toward activity goals. Currently
 
 # Future Updates
 
-These are just some ideas I've got to add to the watch face
+These are just some ideas I've come up with that I might add to the watch face at some point
 
  * Heart Rate
  * Rings that change color when you hit each goal
