@@ -1,0 +1,65 @@
+<svg>
+  
+  <!-- Clock -->
+  <text id="clockHours" class="clock-display" x="52" y="25%">00</text>
+  <text id="clockMinutes" class="clock-display" x="52" y="49%">00</text>
+  <text id="date" class="baseSettings" x="52" y="61%" />
+  
+  <line x1="105" x2="105" y1="5" y2="65%-5" fill="white" stroke-width="1" />
+  
+  <!-- Battery Data -->
+  <image x="86%" y="5" href="icons/battery.png" width="38" height="18">
+    <rect id="batteryLevel" x="4" y="4" height="10" />
+  </image>
+  
+  <!-- Steps -->
+  <g id="steps">
+    <arc id="arcBack" x="115" y="9" width="177" height="177" fill="fb-extra-dark-gray" arc-width="9" start-angle="0" sweep-angle="360" />
+    <arc id="arcFront" x="115" y="9" width="177" height="177" arc-width="9" fill="#3182DE" start-angle="0" sweep-angle="0" />
+    <image x="113" y="10" width="181" height="186" href="transparent.png" />
+    <image id="dataIcon" href="icons/stepsOpen.png" width="48" height="48" x="180" y="70" />
+    <text id="dataCount" class="baseSettings" x="203" y="160" />
+  </g>
+  
+  <line x1="5" x2="100%-5" y1="65%" y2="65%" fill="white" stroke-width="1" />
+  
+  <!-- Distance -->
+  <g id="distance" class="deviceData">
+    <arc id="arcBack" x="5" y="100%-98" width="65" height="65" fill="fb-extra-dark-gray" arc-width="5" start-angle="0" sweep-angle="360" />
+    <arc id="arcFront" x="5" y="100%-98" width="65" height="65" arc-width="5" fill="#00A629" start-angle="0" sweep-angle="0" />
+    <image id="dataIcon" href="icons/distOpen.png" width="32" height="32" x="22" y="100%-81" />
+    <text id="dataCount" class="baseSettings smallFont" x="36" y="100%-9" />
+  </g>
+  
+  <!-- Calories -->
+  <g id="calories" class="deviceData">
+    <arc id="arcBack" x="80" y="100%-98" width="65" height="65" fill="fb-extra-dark-gray" arc-width="5" start-angle="0" sweep-angle="360" />
+    <arc id="arcFront" x="80" y="100%-98" width="65" height="65" fill="#FC6B3A" arc-width="5" start-angle="0" sweep-angle="0" />
+    <image id="dataIcon" href="icons/calsOpen.png" width="32" height="32" x="96" y="100%-81" />
+    <text id="dataCount" class="baseSettings smallFont" x="112" y="100%-9" />
+  </g>
+    
+  <!--Heart Rate Data
+  <g id="heartRate" class="deviceData">
+    <image href="icons/heartIcon.png" width="55" height="55" x="122" y="100%-75" />
+    <text id="hrm-data" class="baseSettings smallFont" x="50%-1" y="100%-40" />
+  </g>-->
+    
+  <!-- Stairs Climbed -->
+  <g id="elevationGain" class="deviceData">
+    <arc id="arcBack" x="155" y="100%-98" width="65" height="65" fill="fb-extra-dark-gray" arc-width="5" start-angle="0" sweep-angle="360" />
+    <arc id="arcFront" x="155" y="100%-98" width="65" height="65" fill="#F83478" arc-width="5" start-angle="0" sweep-angle="0" />
+    <image id="dataIcon" href="icons/floorsOpen.png" width="32" height="32" x="172" y="100%-81" />
+    <text id="dataCount" class="baseSettings smallFont" x="187" y="100%-9" />
+  </g>
+  
+  <!-- Active Minutes -->
+  <g id="activeMinutes" class="deviceData">
+    <arc id="arcBack" x="230" y="100%-98" width="65" height="65" fill="fb-extra-dark-gray" arc-width="5" start-angle="0" sweep-angle="360" />
+    <arc id="arcFront" x="230" y="100%-98" width="65" height="65" fill="#FFCC33" arc-width="5" start-angle="0" sweep-angle="0" />
+    <image id="dataIcon" href="icons/amOpen.png" width="32" height="32" x="247" y="100%-81" />
+    <text id="dataCount" class="baseSettings smallFont" x="262" y="100%-9" />
+  </g>
+  
+  <image x="0" y="200" width="300" height="67" href="transparent.png" />
+</svg>

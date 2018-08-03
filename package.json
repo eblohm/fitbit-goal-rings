@@ -1,0 +1,20 @@
+{
+  "fitbit": {
+    "appUUID": "a05df78d-b2f6-43df-b7aa-5d3bab077e49",
+    "appType": "clockface",
+    "appDisplayName": "Goal Rings",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#607d8b",
+    "requestedPermissions": [
+      "access_activity"
+    ],
+    "buildTargets": [
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Goal Rings"
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.baseSettings {
+  fill: white;
+  text-length: 32;
+  text-anchor: middle;
+  font-family: Seville-Condensed;
+}
+
+.smallestFont {
+  font-size: 15;
+}
+
+.smallFont {
+  font-size: 28;
+}
+
+.clock-display {
+  font-family: Colfax-Bold;
+  fill: white;
+  font-size: 75;
+  text-anchor: middle;
+}
+
+#dataIcon {
+  fill: white;
+}
+
+#steps #dataCount {
+  font-size: 32;
+  }
