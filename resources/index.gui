@@ -1,9 +1,15 @@
 <svg>
   
   <!-- Clock -->
-  <text id="clockHours" class="clock-display" x="52" y="25%">00</text>
-  <text id="clockMinutes" class="clock-display" x="52" y="49%">00</text>
-  <text id="date" class="baseSettings" x="52" y="61%" />
+  <text id="clockHours" class="clock-display" x="52" y="57">00</text>
+  <text id="clockMinutes" class="clock-display" x="52" y="117">00</text>
+  <text id="date" class="baseSettings" x="52" y="147" />
+  
+  <!--Heart Rate Data-->
+  <g id="heartRate">
+    <image id="dataIcon" href="icons/heartIcon.png" width="32" height="32" x="20" y="158" fill="fb-red" />
+    <text id="hrm-data" class="baseSettings smallFont" x="75" y="184" />
+  </g>
   
   <line x1="105" x2="105" y1="5" y2="65%-5" fill="white" stroke-width="1" />
   
@@ -38,12 +44,6 @@
     <image id="dataIcon" href="icons/calsOpen.png" width="32" height="32" x="96" y="100%-81" />
     <text id="dataCount" class="baseSettings smallFont" x="112" y="100%-9" />
   </g>
-    
-  <!--Heart Rate Data
-  <g id="heartRate" class="deviceData">
-    <image href="icons/heartIcon.png" width="55" height="55" x="122" y="100%-75" />
-    <text id="hrm-data" class="baseSettings smallFont" x="50%-1" y="100%-40" />
-  </g>-->
     
   <!-- Stairs Climbed -->
   <g id="elevationGain" class="deviceData">

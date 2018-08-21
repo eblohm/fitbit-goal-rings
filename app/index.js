@@ -3,7 +3,9 @@ import clock from "clock";
 import userActivity from "user-activity";
 import { display } from "display";
 import { preferences } from "user-settings";
+import { HeartRateSensor } from "heart-rate";
 import * as battery from "battery";
+import * as heartMonitor from "hrm";
 import * as util from "../common/utils";
 
 // Set up all necessary variables
@@ -13,11 +15,11 @@ clock.granularity = "seconds";
 
 let date          = document.getElementById("date");
 let currentDay    = "";
-let monthArray = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-                   "Jul", "Aug","Sep", "Oct", "Nov", "Dec" ];
-let dataTypes = [ "steps", "distance", "calories",
-                  "elevationGain", "activeMinutes" ];
-let dataProgress = [];
+let monthArray    = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                      "Jul", "Aug","Sep", "Oct", "Nov", "Dec" ];
+let dataTypes     = [ "steps", "distance", "calories",
+                      "elevationGain", "activeMinutes" ];
+let dataProgress  = [];
 
 
 let getCurrentDataProgress = function(dataType) {
@@ -89,3 +91,5 @@ clock.ontick = evt => {
   
   refreshAllData();
 }
+
+heartMonitor.initialize();
