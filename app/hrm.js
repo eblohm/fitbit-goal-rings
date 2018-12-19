@@ -19,7 +19,7 @@ export function initialize() {
 }
 
 function getReading() {
-  heartText.text = hrm.heartRate;
+  heartText.text = hrm.heartRate ? hrm.heartRate : 0;
 }
 
 function heartRateSetup() {
