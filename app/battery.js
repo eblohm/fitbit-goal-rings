@@ -1,7 +1,8 @@
 import document from "document";
-import { battery } from "power";
+import { battery, charger } from "power";
 
 const batData = document.getElementById("batteryLevel");
+const batIcon = document.getElementById("batteryIcon");
 
 function batteryLevelColor(percentage) {
   let batColor = '';
@@ -18,4 +19,5 @@ function batteryLevelColor(percentage) {
 export function setLevel() {
   batData.width = Math.round(battery.chargeLevel * 26 / 100);
   batData.style.fill = batteryLevelColor(Math.round(battery.changeLevel));
+  batIcon.style.visibility = battery.charging || charger.connected ? "hidden" : "visible";
 }
