@@ -14,7 +14,7 @@
   <line x1="105" x2="105" y1="5" y2="65%-5" fill="white" stroke-width="1" />
   
   <!-- Battery Data -->
-  <image x="86%" y="5" href="icons/battery.png" width="38" height="18">
+  <image id="batteryIcon" x="86%" y="5" href="icons/battery.png" width="38" height="18">
     <rect id="batteryLevel" x="4" y="4" height="10" />
   </image>
   
